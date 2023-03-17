@@ -41,10 +41,16 @@
         animation-duration: 1.5s;
         animation-timing-function: ease-out;
     }
+    
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+    }
 
     &--more {
         margin-top: 8rem;
         font-size: 2rem;
+        font-weight: 600;
         text-decoration: none;
         position: relative;
         display: inline-block; 

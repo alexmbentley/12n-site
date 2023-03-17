@@ -45,5 +45,12 @@ ORDER: Base + typograpy > general layout > page layout > components
     line-height: 5.5rem;
     color: $color-primary;
     text-shadow: 3px 2px #ff0000;
-   
+}
+
+@mixin header-secondary {
+    font-size: 2.5rem;
+    letter-spacing: .5px;
+    font-family: 'Teko', 'Poppins', sans-serif;
+    color: $color-primary;
+    text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
 }
