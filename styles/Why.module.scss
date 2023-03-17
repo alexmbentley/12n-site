@@ -18,7 +18,7 @@
         margin-top: 5rem;
         display: flex;
         flex-direction: column;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
     }
 
     &__box {
@@ -36,7 +36,8 @@
         }
 
         &--text {
-
+            font-weight: 600;
+            text-align: center;
         }
 
     }

@@ -5,7 +5,7 @@ const FeaturesCard = ({ icon, title, text }) => {
   return (
     <div className={styles['featurescard']}>
       <div className={styles['featurescard__header']}>
-        <h3>{title}</h3>
+        <h3 className={styles['featurescard__header--title']}>{title}</h3>
         {icon &&
           React.cloneElement(icon, {
             className: styles['featurescard__header--svg'],

@@ -113,6 +113,11 @@ const Nav = () => {
                 </a>
               </li>
               <li className={styles['navigation__item']}>
+                <a href="/why" className={styles['navigation__link']}>
+                  Why join?
+                </a>
+              </li>
+              <li className={styles['navigation__item']}>
                 <a href="/testimonials" className={styles['navigation__link']}>
                   Testimonials
                 </a>
