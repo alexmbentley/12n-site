@@ -39,3 +39,11 @@ ORDER: Base + typograpy > general layout > page layout > components
         @media only screen and (min-width: 112.5em) { @content }; //1800px
     }
 }
+
+@mixin header-main {
+    font-size: 8rem;
+    line-height: 5.5rem;
+    color: $color-primary;
+    text-shadow: 3px 2px #ff0000;
+   
+}

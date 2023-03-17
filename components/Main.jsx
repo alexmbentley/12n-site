@@ -30,31 +30,25 @@ const Main = () => {
           className={styles['container__video--player']}
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/Py6gReBMqWU"
+          src="https://drive.google.com/file/d/1maIwc7kjwTX0Xyft7ymRdFOJWvAnhGan/preview"
           title="1st2Notify Promo"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <Link href="#trial" scroll={false}>
-          <p className={styles['container__video--more']}>
-            {' '}
-            <BsChevronDoubleDown />
-          </p>
-        </Link>
+        <div className={styles['container__video--more']}>
+          <h2 className={styles['container__video--heading']}>
+            Activate your free trial now!
+          </h2>
+          <a
+            href="https://whop.com/checkout/plan_p9joThX6UZC3c?d2c=true"
+            className={styles['container__video--button']}
+          >
+            Join now
+          </a>
+        </div>
       </div>
 
-      <div id="trial" className={styles['container__trial']}>
-        <h2 className={styles['container__trial--heading']}>
-          Activate your free trial now!
-        </h2>
-        <a
-          href="https://whop.com/marketplace/1st2nft/"
-          className={styles['container__trial--button']}
-        >
-          Join now
-        </a>
-      </div>
       <div className={styles['container__reviews']}>
         <h3 className={styles['container__reviews--heading']}>
           Here's what our members have to say

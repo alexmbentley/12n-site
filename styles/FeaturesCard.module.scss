@@ -1,0 +1,51 @@
+@import 'mixins';
+@import 'variables';
+
+
+.featurescard {
+    padding: 1rem;
+    
+    &__header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+
+      &--svg {
+        width: 4rem;
+        height: 4rem;
+        margin-right: .2rem;
+        color: $color-primary;
+        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+        justify-self: flex-end;
+        align-self: flex-end;
+      }
+      
+      h3 {
+        font-size: 2.5rem;
+        letter-spacing: .5px;
+        font-family: 'Teko';
+        margin-left: .5rem;
+        color: $color-primary;
+        text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
+      }
+    }
+    
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      
+      p {
+        align-self: center;
+        justify-self: center;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }

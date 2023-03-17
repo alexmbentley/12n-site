@@ -1,0 +1,40 @@
+@import 'mixins';
+@import 'variables';
+
+.container {  
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+
+
+  &--h1 {
+    grid-area: 1 / 1 / 2 / 2; 
+    @include header-main;
+    font-weight: 600;
+    margin: 5rem 0 4rem 0;
+    text-align: center;
+    }
+  
+  
+  
+  
+  &__box { 
+    grid-area: 2 / 1 / 3 / 2; 
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 5rem;
+  }
+    
+
+}
+
+

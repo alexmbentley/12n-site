@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'variables';
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__heading {
+        @include header-main;
+        line-height: normal;
+        animation-name: moveInLeft;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        margin-top: 5rem;
+    }
+
+    &__box {
+        display: flex;
+    }
+}
