@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '@/styles/Home.module.scss';
 import Link from 'next/link';
-import { BsChevronDoubleDown } from 'react-icons/bs';
+import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 
 const Main = () => {
   return (
@@ -53,7 +53,7 @@ const Main = () => {
         <h3 className={styles['container__reviews--heading']}>
           Here's what our members have to say
         </h3>
-        <div className="commonninja_component pid-2302da83-b560-4909-843d-18d30b712063"></div>
+        <TestimonialsCarousel />
       </div>
     </div>
   );
