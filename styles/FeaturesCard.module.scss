@@ -1,6 +1,5 @@
 @import 'mixins';
 @import 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 
 
 .featurescard {
@@ -25,7 +24,7 @@
       &--title {
         font-size: 2.5rem;
         letter-spacing: .5px;
-        font-family: 'Teko', sans-serif;
+        @include header-secondary;
         margin-left: .5rem;
         color: $color-primary;
         text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
