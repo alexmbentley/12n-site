@@ -1,5 +1,6 @@
 import ReviewCard from '@/components/ReviewCard';
 import styles from '@/styles/Testimonials.module.scss';
+import reviewstyles from '@/styles/Reviewcard.module.scss';
 
 const testimonials = () => {
   return (

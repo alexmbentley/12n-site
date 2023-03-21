@@ -51,7 +51,7 @@ ORDER: Base + typograpy > general layout > page layout > components
 @mixin header-secondary {
     font-size: 2.5rem;
     letter-spacing: .5px;
-    font-family: 'Teko', sans-serif;
+    font-family: $secondary-font;
     color: $color-primary;
     text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
 }

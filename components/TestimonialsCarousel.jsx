@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styles from '@/styles/Testimonials.module.scss';
+import { AiFillStar } from 'react-icons/ai';
 
 const TestimonialsCarousel = () => {
   const settings = {
@@ -12,9 +13,18 @@ const TestimonialsCarousel = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <div className={styles['carousel']}>
-        <h3 className={styles['carousel__heading']}>Jordan Keen</h3>
+    <Slider className={styles['carousel']} {...settings}>
+      <div>
+        <div className={styles['carousel__head']}>
+          <h3 className={styles['carousel__heading']}>Jordan Keen</h3>
+          <span className={styles['carousel__stars']}>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+          </span>
+        </div>
         <p className={styles['carousel__text']}>
           From being in this group around a year now I can honestly say this is
           not a community this is a family. Each one of us bounce off eachother
@@ -25,8 +35,17 @@ const TestimonialsCarousel = () => {
           gods work you do!
         </p>
       </div>
-      <div className={styles['carousel']}>
-        <h3 className={styles['carousel__heading']}>ChIlevodoo</h3>
+      <div>
+        <div className={styles['carousel__head']}>
+          <h3 className={styles['carousel__heading']}>ChIlevodoo</h3>
+          <span className={styles['carousel__stars']}>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+          </span>
+        </div>
         <p className={styles['carousel__text']}>
           One of the greatest groups in the Crypto/NFT space. The staff are
           polite, responsive and always willing to help if you need it. It's up
@@ -36,8 +55,17 @@ const TestimonialsCarousel = () => {
           team.
         </p>
       </div>
-      <div className={styles['carousel']}>
-        <h3 className={styles['carousel__heading']}>Oliver K</h3>
+      <div>
+        <div className={styles['carousel__head']}>
+          <h3 className={styles['carousel__heading']}>Oliver K</h3>
+          <span className={styles['carousel__stars']}>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+          </span>
+        </div>
         <p className={styles['carousel__text']}>
           Been in 1st2Notify for a very long time. I've enjoyed every single
           moment people are so nice in there. They have helped me through
