@@ -5,7 +5,7 @@ const ReviewCard = ({ pic, text, name }) => {
   return (
     <div className={styles['reviewcard']}>
       <div className={styles['reviewcard__header']}>
-        <h3>{name}</h3>
+        <h5 className={styles['reviewcard__header-heading']}>{name}</h5>
       </div>
       <div className={styles['reviewcard__content']}>
         <p>{text}</p>

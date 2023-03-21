@@ -11,6 +11,15 @@
       width: 100%;
       justify-content: space-between;
 
+      &-title {
+        font-size: 2.5rem;
+        letter-spacing: .5px;
+        @include header-secondary;
+        margin-left: .5rem;
+        color: $color-primary;
+        text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
+      }
+
       &--svg {
         width: 4rem;
         height: 4rem;
@@ -21,14 +30,7 @@
         align-self: start;
       }
       
-      &--title {
-        font-size: 2.5rem;
-        letter-spacing: .5px;
-        @include header-secondary;
-        margin-left: .5rem;
-        color: $color-primary;
-        text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
-      }
+      
     }
     
     &__content {

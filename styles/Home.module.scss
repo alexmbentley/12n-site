@@ -104,16 +104,18 @@
       animation-duration: 1.5s;
       animation-timing-function: ease-out;
       margin-bottom: 1rem;
-      margin-top: 4rem;
+      margin-top: 5rem;
   }
 
   &--button {
-      margin-top: 4rem;
+      margin-top: 3rem;
       display: block;
-      width: 200px;
-      height: 40px;
+      width: 20rem;
+      height: 4rem;
       line-height: 40px;
       font-size: 2rem;
+      border-radius: 1rem;
+      font-weight: 600;
       text-decoration: none;
       color: $color-primary;
       border: 2px solid $color-primary;
@@ -171,11 +173,14 @@
 
   &__reviews { 
     grid-area: 4 / 1 / 5 / 2; 
+    margin-top: 15rem;
     
     &--heading {
-      font-size: 3rem;
+      font-size: 5rem;
       text-align: center;
       margin-bottom: 2rem;
+      font-family: 'Teko', sans-serif;
+      text-shadow: 3px 5px 2px rgb(0 0 0 / 0.4);
       color: $color-primary;
       animation-name: moveInLeft;
       animation-duration: 1.5s;

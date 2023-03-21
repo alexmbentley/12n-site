@@ -126,11 +126,6 @@ export default function App({ Component, pageProps }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/12n-logo.png" />
-        <script
-          type="text/javascript"
-          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
-          async
-        ></script>
       </Head>
       <Nav />
       <Component {...pageProps} />
