@@ -1,5 +1,5 @@
 import Nav from '@/components/Nav';
-import '@/styles/globals.scss';
+import '@/styles/app.scss';
 import { useCallback, useEffect } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';

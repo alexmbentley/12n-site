@@ -19,6 +19,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 4rem;
+
+        @include respond(phone){
+            font-size: 6rem;
+        }
     }
 
     &__box {

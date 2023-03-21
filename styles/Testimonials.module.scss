@@ -17,6 +17,9 @@
       @include header-main;
       margin: 5rem 0 4rem 0;
       text-align: center;
+      @include respond(phone){
+       font-size: 6rem;
+      }
       }
   
       &__box{
@@ -41,6 +44,11 @@
           background-color: rgba(255, 255, 255, 0.263);
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
           transition: all 0.2s ease-in-out;
+
+          @include respond(phone){
+            width: 85vw;
+            height: 22rem;
+          }
 
           h5 {
             font-size: 2.5rem;

@@ -17,6 +17,10 @@
     font-weight: 600;
     margin: 5rem 0 4rem 0;
     text-align: center;
+
+    @include respond(phone){
+      font-size: 6rem;
+    }
     }
   
   
