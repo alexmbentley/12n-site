@@ -1,13 +1,12 @@
 import React from 'react';
-import styles from '@/styles/Reviewcard.module.scss';
 
 const ReviewCard = ({ pic, text, name }) => {
   return (
-    <div className={styles['reviewcard']}>
-      <div className={styles['reviewcard__header']}>
-        <h5 className={styles['reviewcard__header-heading']}>{name}</h5>
+    <div className="reviewcard">
+      <div className="reviewcard__header">
+        <h5 className="reviewcard__header-heading">{name}</h5>
       </div>
-      <div className={styles['reviewcard__content']}>
+      <div className="reviewcard__content">
         <p>{text}</p>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '@/styles/Nav.module.scss';
 import Image from 'next/image';
 import logo from '@/public/images/12n-logo.png';
 import Link from 'next/link';
@@ -9,18 +8,18 @@ import { slide as Menu } from 'react-burger-menu';
 const Nav = () => {
   const router = useRouter();
   return (
-    <div className={styles.nav}>
+    <div className="nav">
       <Link href="/">
-        <Image src={logo} className={styles['nav__logo']} alt="Logo" />
+        <Image src={logo} className="nav__logo" alt="Logo" />
       </Link>
       <div>
-        <ul className={styles['nav__list']}>
+        <ul className="nav__list">
           <Link href="/">
             <li
               className={
                 router.pathname === '/' || ''
-                  ? styles['nav__list--item-active']
-                  : styles['nav__list--item']
+                  ? 'nav__list--item-active'
+                  : 'nav__list--item'
               }
             >
               Home
@@ -30,8 +29,8 @@ const Nav = () => {
             <li
               className={
                 router.pathname === '/features'
-                  ? styles['nav__list--item-active']
-                  : styles['nav__list--item']
+                  ? 'nav__list--item-active'
+                  : 'nav__list--item'
               }
             >
               Features
@@ -41,8 +40,8 @@ const Nav = () => {
             <li
               className={
                 router.pathname === '/faqs'
-                  ? styles['nav__list--item-active']
-                  : styles['nav__list--item']
+                  ? 'nav__list--item-active'
+                  : 'nav__list--item'
               }
             >
               FAQs
@@ -52,8 +51,8 @@ const Nav = () => {
             <li
               className={
                 router.pathname === '/why'
-                  ? styles['nav__list--item-active']
-                  : styles['nav__list--item']
+                  ? 'nav__list--item-active'
+                  : 'nav__list--item'
               }
             >
               Why join?
@@ -63,8 +62,8 @@ const Nav = () => {
             <li
               className={
                 router.pathname === '/testimonials'
-                  ? styles['nav__list--item-active']
-                  : styles['nav__list--item']
+                  ? 'nav__list--item-active'
+                  : 'nav__list--item'
               }
             >
               Testimonials
@@ -74,58 +73,58 @@ const Nav = () => {
             <li
               className={
                 router.pathname === '/login'
-                  ? styles['nav__list--item-active']
-                  : styles['nav__list--item']
+                  ? 'nav__list--item-active'
+                  : 'nav__list--item'
               }
             >
               Member Login
             </li>
           </Link>
         </ul>
-        <div className={styles['navigation']}>
+        <div className="navigation">
           <input
             type="checkbox"
-            className={styles['navigation__checkbox']}
+            className="navigation__checkbox"
             id="navi-toggle"
           />
 
-          <label for="navi-toggle" className={styles['navigation__button']}>
-            <span className={styles['navigation__icon']}>&nbsp;</span>
+          <label for="navi-toggle" className="navigation__button">
+            <span className="navigation__icon">&nbsp;</span>
           </label>
 
-          <div className={styles['navigation__background']}>&nbsp;</div>
+          <div className="navigation__background">&nbsp;</div>
 
-          <nav className={styles['navigation__nav']}>
-            <ul className={styles['navigation__list']}>
-              <li className={styles['navigation__item']}>
-                <a href="/" className={styles['navigation__link']}>
+          <nav className="navigation__nav">
+            <ul className="navigation__list">
+              <li className="navigation__item">
+                <a href="/" className="navigation__link">
                   <span></span> Home
                 </a>
               </li>
-              <li className={styles['navigation__item']}>
-                <a href="/features" className={styles['navigation__link']}>
+              <li className="navigation__item">
+                <a href="/features" className="navigation__link">
                   Features
                 </a>
               </li>
-              <li className={styles['navigation__item']}>
-                <a href="/faqs" className={styles['navigation__link']}>
+              <li className="navigation__item">
+                <a href="/faqs" className="navigation__link">
                   FAQs
                 </a>
               </li>
-              <li className={styles['navigation__item']}>
-                <a href="/why" className={styles['navigation__link']}>
+              <li className="navigation__item">
+                <a href="/why" className="navigation__link">
                   Why join?
                 </a>
               </li>
-              <li className={styles['navigation__item']}>
-                <a href="/testimonials" className={styles['navigation__link']}>
+              <li className="navigation__item">
+                <a href="/testimonials" className="navigation__link">
                   Testimonials
                 </a>
               </li>
-              <li className={styles['navigation__item']}>
+              <li className="navigation__item">
                 <a
                   href="https://whop.com/1st2nft/"
-                  className={styles['navigation__link']}
+                  className="navigation__link"
                 >
                   Member Login
                 </a>

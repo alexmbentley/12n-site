@@ -1,11 +1,10 @@
 import Accordion from '@/components/Accordion';
-import styles from '@/styles/FAQs.module.scss';
 
 const faqs = () => {
   return (
-    <div className={styles['container']}>
-      <div className={styles['container--h1']}>FAQ's</div>
-      <div className={styles['container__box']}>
+    <div className="faqs__container">
+      <div className="faqs__container--h1">FAQ's</div>
+      <div className="faqs__container__box">
         <Accordion
           title="How can I join?"
           info={

@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from 'react-slick';
-import styles from '@/styles/Testimonials.module.scss';
 import { AiFillStar } from 'react-icons/ai';
 
 const TestimonialsCarousel = () => {
@@ -13,11 +12,11 @@ const TestimonialsCarousel = () => {
   };
 
   return (
-    <Slider className={styles['carousel']} {...settings}>
+    <Slider className="carousel" {...settings}>
       <div>
-        <div className={styles['carousel__head']}>
-          <h3 className={styles['carousel__heading']}>Jordan Keen</h3>
-          <span className={styles['carousel__stars']}>
+        <div className="carousel__head">
+          <h3 className="carousel__heading">Jordan Keen</h3>
+          <span className="carousel__stars">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -25,7 +24,7 @@ const TestimonialsCarousel = () => {
             <AiFillStar />
           </span>
         </div>
-        <p className={styles['carousel__text']}>
+        <p className="carousel__text">
           From being in this group around a year now I can honestly say this is
           not a community this is a family. Each one of us bounce off eachother
           and genuinely want eachother to succeed. With everything there are
@@ -36,9 +35,9 @@ const TestimonialsCarousel = () => {
         </p>
       </div>
       <div>
-        <div className={styles['carousel__head']}>
-          <h3 className={styles['carousel__heading']}>ChIlevodoo</h3>
-          <span className={styles['carousel__stars']}>
+        <div className="carousel__head">
+          <h3 className="carousel__heading">ChIlevodoo</h3>
+          <span className="carousel__stars">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -46,7 +45,7 @@ const TestimonialsCarousel = () => {
             <AiFillStar />
           </span>
         </div>
-        <p className={styles['carousel__text']}>
+        <p className="carousel__text">
           One of the greatest groups in the Crypto/NFT space. The staff are
           polite, responsive and always willing to help if you need it. It's up
           to date on everything crypto/nfts and recently have a Forex component
@@ -56,9 +55,9 @@ const TestimonialsCarousel = () => {
         </p>
       </div>
       <div>
-        <div className={styles['carousel__head']}>
-          <h3 className={styles['carousel__heading']}>Oliver K</h3>
-          <span className={styles['carousel__stars']}>
+        <div className="carousel__head">
+          <h3 className="carousel__heading">Oliver K</h3>
+          <span className="carousel__stars">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -66,7 +65,7 @@ const TestimonialsCarousel = () => {
             <AiFillStar />
           </span>
         </div>
-        <p className={styles['carousel__text']}>
+        <p className="carousel__text">
           Been in 1st2Notify for a very long time. I've enjoyed every single
           moment people are so nice in there. They have helped me through
           everything the last 2 years. There is so many different ways of making

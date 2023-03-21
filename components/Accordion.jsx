@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styles from '@/styles/Accordion.module.scss';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 
 const Accordion = ({ title, info, icon }) => {
@@ -16,18 +15,16 @@ const Accordion = ({ title, info, icon }) => {
   };
 
   return (
-    <div className={styles.accordion}>
-      <button onClick={toggleState} className={styles['accordion__button']}>
-        <p className={styles['accordion__button--text']}>{title}</p>
-        <p className={styles['accordion__button--logo']}>
+    <div className="accordion">
+      <button onClick={toggleState} className="accordion__button">
+        <p className="accordion__button--text">{title}</p>
+        <p className="accordion__button--logo">
           <BsChevronDoubleDown />
         </p>
       </button>
 
       <div
-        className={`${styles['accordion__toggle']} ${
-          toggle && styles['animated']
-        }`}
+        className={`$'accordion__toggle' ${toggle && 'animated'}`}
         style={{ maxHeight: heightEl }}
         ref={refHeight}
       >

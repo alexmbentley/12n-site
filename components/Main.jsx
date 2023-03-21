@@ -1,16 +1,15 @@
 import React from 'react';
-import styles from '@/styles/Home.module.scss';
 import Link from 'next/link';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 
 const Main = () => {
   return (
-    <div className={styles['container']}>
-      <div className={styles['container__welcome']}>
-        <h1 className={styles['container__welcome--h1']}>
+    <div className="home__container">
+      <div className="home__container__welcome">
+        <h1 className="home__container__welcome--h1">
           Welcome to <br />
         </h1>
-        <h1 className={styles['container__welcome--h1hl']}> 1st2Notify</h1>
+        <h1 className="home__container__welcome--h1hl"> 1st2Notify</h1>
         <p>
           Our community is dedicated to helping you achieve financial freedom
           through successful side hustles. With exclusive content, live
@@ -21,13 +20,13 @@ const Main = () => {
           journey towards financial freedom!
         </p>
         <Link href="#video" scroll={false}>
-          <p className={styles['container__welcome--more']}>Find out more</p>
+          <p className="home__container__welcome--more">Find out more</p>
         </Link>
       </div>
 
-      <div id="video" className={styles['container__video']}>
+      <div id="video" className="home__container__video">
         <iframe
-          className={styles['container__video--player']}
+          className="home__container__video--player"
           width="100%"
           height="100%"
           src="https://drive.google.com/file/d/1maIwc7kjwTX0Xyft7ymRdFOJWvAnhGan/preview"
@@ -36,21 +35,21 @@ const Main = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <div className={styles['container__video--more']}>
-          <h2 className={styles['container__video--heading']}>
+        <div className="home__container__video--more">
+          <h2 className="home__container__video--heading">
             Activate your free trial now!
           </h2>
           <a
             href="https://whop.com/checkout/plan_p9joThX6UZC3c?d2c=true"
-            className={styles['container__video--button']}
+            className="home__container__video--button"
           >
             Join now
           </a>
         </div>
       </div>
 
-      <div className={styles['container__reviews']}>
-        <h3 className={styles['container__reviews--heading']}>
+      <div className="home__container__reviews">
+        <h3 className="home__container__reviews--heading">
           Here's what our members have to say
         </h3>
         <TestimonialsCarousel />
