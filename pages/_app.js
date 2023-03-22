@@ -6,6 +6,10 @@ import { loadFull } from 'tsparticles';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Footer from '@/components/Footer';
+import { Teko, Poppins } from '@/next/font/google';
+
+const teko = Teko({ subsets: ['latin'] });
+const poppins = Poppins({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
   const options = {
@@ -117,7 +121,7 @@ export default function App({ Component, pageProps }) {
     document.title = `1st2Notify - ${getPageTitle()}`;
   }, [router.pathname]);
   return (
-    <div>
+    <div className={`${poppins.variable} ${teko.variable}`}>
       <Head>
         <title>1st2Notify</title>
         <meta

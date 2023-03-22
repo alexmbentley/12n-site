@@ -47,9 +47,11 @@ ORDER: Base + typograpy > general layout > page layout > components
 }
 // FONT
 $default-font-size: 1.6rem;
-$default-font: 'Poppins', sans-serif;
-$secondary-font: 'Teko', sans-serif;
+// $default-font: 'Poppins', sans-serif;
+// $secondary-font: 'Teko', sans-serif;
 
+$default-font: var(--poppins-default);
+$secondary-font: var(--teko-default);
 
 @mixin header-main {
   font-size: 8rem;
