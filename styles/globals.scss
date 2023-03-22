@@ -1,7 +1,7 @@
 // GLOBAL
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/kya2coe.css");
 @import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
 // MIXINS
 @mixin absCenter {
@@ -47,11 +47,11 @@ ORDER: Base + typograpy > general layout > page layout > components
 }
 // FONT
 $default-font-size: 1.6rem;
-// $default-font: 'Poppins', sans-serif;
-// $secondary-font: 'Teko', sans-serif;
+$default-font: 'Poppins', sans-serif;
+$secondary-font: 'teko', sans-serif;
 
-$default-font: var(--poppins-default);
-$secondary-font: var(--teko-default);
+// $default-font: var(--poppins-default);
+// $secondary-font: var(--teko-default);
 
 @mixin header-main {
   font-size: 8rem;

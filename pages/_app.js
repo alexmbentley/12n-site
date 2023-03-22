@@ -6,10 +6,16 @@ import { loadFull } from 'tsparticles';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Footer from '@/components/Footer';
-import { Teko, Poppins } from '@/next/font/google';
+import { Teko, Poppins } from 'next/font/google';
 
-const teko = Teko({ subsets: ['latin'] });
-const poppins = Poppins({ subsets: ['latin'] });
+const teko = Teko({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+});
 
 export default function App({ Component, pageProps }) {
   const options = {

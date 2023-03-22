@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Main from '@/components/Main.jsx';
 import Script from 'next/script';
 import { useEffect } from 'react';
-import '@/styles/globals.scss';
 
 export default function Home() {
   useEffect(() => {
