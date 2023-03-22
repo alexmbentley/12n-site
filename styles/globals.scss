@@ -45,6 +45,11 @@ ORDER: Base + typograpy > general layout > page layout > components
       @media only screen and (min-width: 112.5em) { @content }; //1800px
   }
 }
+// FONT
+$default-font-size: 1.6rem;
+$default-font: 'Poppins', sans-serif;
+$secondary-font: 'Teko', sans-serif;
+
 
 @mixin header-main {
   font-size: 8rem;
@@ -79,10 +84,7 @@ $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
-// FONT
-$default-font-size: 1.6rem;
-$default-font: 'Poppins', sans-serif;
-$secondary-font: 'Sarpanch', sans-serif;
+
 
 
 
